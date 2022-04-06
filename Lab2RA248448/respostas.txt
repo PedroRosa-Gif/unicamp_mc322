@@ -1,0 +1,20 @@
+Respostas
+
+1 - Quando instanciamos um novo objeto do tipo CartaLacaio atráves do construtor reduzido,
+o mesmo construtor define apenas os atributos passados por parametro, os outros atributos
+são definidos com os valores nulos de seus tipos. Isso acontece pois no momento que instanciamos
+o objeto lac4, passamos 3 valores como parametros, assim ele identifica que é o construtor reduzido
+que queremos acessar, assim não atribuindo valores as outras variaveis.
+
+3 - Ao comentar o método toString da classe CartaMagia, ele não imprime os atributos do objeto do
+tipo CartaMagia, ele imprime o endereço do objeto na memória.
+
+4 - Ao instanciar o objeto lac5 a partir do construtor cópia, passamos como parametro o objeto
+do tipo CartaLacaio que queremos copiar, no caso o lac2, assim todos os atributos de lac5 são
+os mesmo que lac2.
+
+5 - Ao alterarmos a visibilidade para private do atributo nome, não é possivel acessa-lo diretamente,
+apenas a partir do metodo getNome da Classe, isso acontece para que haja um melhor gerenciamento de
+alteração, desse modo terceiros (outras pastas) não podem acessar esses atributos diretamente, e alte-
+ra-los diretamente. Isso é muito útil em aplicações back-end, não permitindo que algum usuario altere
+diretamente o valor de um atributo a qual ele não tem permissão.
