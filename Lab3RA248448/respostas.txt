@@ -1,0 +1,14 @@
+1 - Caso adicionemos mais de 10 obejtos no vetor de cartas, ocorrerá um erro, de limite de tamanho excedido do vetor, ou seja o index acessado não existe. typeError: ArrayIndexOutOfBoundsException
+
+2 - Semelhante ao outro caso, se tentarmos acessar uma posição a menos em um vetor vazio, ocorrerá o mesmo erro de index não existente no vetor. typeError: ArrayIndexOutOfBoundsException
+
+3 - Ele pode ser estatico para que não criemos um objeto gerador toda vez que instanciamos um novo objeto Baralho, assim o objeto gerador é sempre o mesmo em todos os objetos Baralhos instanciados. Se ele não fosse estático toda vez que instanciamos um novo objeto se cria um novo objeto do tipo gerador.
+
+4 - Se inicializarmos o gerador no construtor da classe, ele será instanciado toda vez que o construtor for acessado, assim gerando um novo objeto que pode dificultar na comparação de resultados. 
+
+5 - Dessa maneira além de deixar o codigo de forma mais orgazinada, podemos acessar os metodos dessa classe sem ter que instanciar um novo objeto, modificando a chamada de função: Util.buffar, e tambem não precisando criar esses metodos na classe CartaLacaio toda vez que instanciamos um novo objeto do tipo CartaLacaio, pois todos eles tem os metodos buffar.
+
+6 - Com ArrayList não precisamos nos preocupar com o limite de tamanho sendo excedido, afinal o ArrayList é um vetor dinâmico, assim podendo adicionar e excluir cartas sem que ocorra erro na execução.
+
+
+Para Pensar: Eu pensei que pode se criar uma Classe Pai chamada Carta, que em seus dois filhos CartaLacaio e CartaMagia, usando extends, e na classe Baralho o vetor guarda objetos do tipo Carta.
