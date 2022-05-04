@@ -1,0 +1,1 @@
+1 - Ao tentarmos acessar o atributo 'nome' de lacaio, não conseguimos pois a classe Lacaio herda esse atributo da classe pai Carta, onde na mesma o atributo é privado, assim sendo privado nas subclasses tambem, a menos que seja sobrescrito para um tipo publico.
